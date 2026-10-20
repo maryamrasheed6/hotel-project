@@ -1,0 +1,201 @@
+/* ==========================================================================
+   ROYAL STAY - LUXURY HOTEL BOOKING MANAGEMENT SYSTEM
+   Responsive Stylesheet
+   ========================================================================== */
+
+/* Tablet & Smaller Laptops */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.85rem;
+    }
+
+    .search-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-form .btn {
+        grid-column: span 2;
+    }
+
+    .listing-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-sidebar {
+        position: static;
+        margin-bottom: 2rem;
+    }
+
+    .room-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-sidebar-card {
+        position: static;
+    }
+
+    .booking-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    .chart-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile & Small Tablets */
+@media (max-width: 768px) {
+    .site-header {
+        height: auto;
+    }
+
+    .nav-wrapper {
+        height: 70px;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 1.25rem;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-120%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
+    .hero-section {
+        min-height: 75vh;
+        padding: 4rem 0;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .search-widget-wrapper {
+        margin-top: -2rem;
+    }
+
+    .search-widget {
+        padding: 1.25rem;
+    }
+
+    .search-form {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .search-form .btn {
+        grid-column: span 1;
+    }
+
+    .section {
+        padding: 3.5rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .amenities-badges-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .room-meta-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .gallery-main {
+        height: 300px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    /* Admin Mobile Responsiveness */
+    .admin-sidebar {
+        transform: translateX(-100%);
+    }
+
+    .admin-sidebar.mobile-open {
+        transform: translateX(0);
+    }
+
+    .admin-main {
+        margin-left: 0 !important;
+    }
+
+    .admin-topbar {
+        padding: 0 1rem;
+    }
+
+    .admin-content {
+        padding: 1.25rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-banner {
+        padding: 3rem 1.5rem;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .confirmation-card {
+        padding: 1.5rem;
+    }
+}
